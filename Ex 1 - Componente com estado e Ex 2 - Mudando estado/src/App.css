@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  background-color: rgb(46, 68, 73);
+  background-image: linear-gradient(to bottom, rgb(70, 109, 119), rgb(46, 68, 73));
+  color: rgb(222, 242, 247);
+  padding: 15px;
+}
+
+.btn-change-movie {
+  background-color: rgb(46, 68, 73); 
+  background-image: linear-gradient(to bottom, rgb(70, 109, 119), rgb(46, 68, 73));
+  border: none;
+  border-radius: 20px;
+  color: rgb(222, 242, 247);
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px 0;
+  outline: none;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-change-movie:hover {
+  background-color: rgb(49, 55, 56);
+  background-image: linear-gradient(to bottom,  rgb(62, 120, 134), rgb(84, 131, 143));
+}
