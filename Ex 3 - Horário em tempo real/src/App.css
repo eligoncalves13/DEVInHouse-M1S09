@@ -1,0 +1,18 @@
+@font-face {
+  font-family: AlarmClock;
+  src: url(../src/assets/alarm_clock.ttf);
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  color: white;
+  font-family: AlarmClock;
+  font-size: 68px;
+}
