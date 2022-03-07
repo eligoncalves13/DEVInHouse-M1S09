@@ -1,27 +1,23 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Time() {
-  const date = new Date();
-  const [time, setTime] = useState({
-      hours: date.getHours(),
-      minutes: date.getMinutes(),
-      seconds: date.getSeconds()
-  });
+const Time = () => {
+  const [timeState, setTimeState] = useState();
+  const [dateState, setDataState] = useState();
 
   setInterval(() => {
     const date = new Date();
-    setTime({
-      hours: date.getHours(),
-      minutes: date.getMinutes(),
-      seconds: date.getSeconds()
-    });
+    setTimeState(date.toLocaleTimeString());
+    setDataState(date.toLocaleDateString('pt-Br',{dateStyle: 'short'} ));
   }, 1000);
- 
+
   return (
     <div className='timer_container'>
         <span className='timer'>
-            {time.hours}:{time.minutes}:{time.seconds}
+          {timeState}  
+        </span>
+        <span className='date'>
+          {dateState}
         </span>
     </div>
   );
