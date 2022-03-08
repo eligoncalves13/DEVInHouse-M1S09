@@ -5,6 +5,7 @@ import UserData from './UserData';
 function App() {
   const [favoriteMovie, setFavoriteMovie] = useState('Matrix');
   const [isActive, setActive] = useState(false);
+  
   const handleFavoriteMovie = () => {
     setActive(!isActive);
     if(isActive === false){
